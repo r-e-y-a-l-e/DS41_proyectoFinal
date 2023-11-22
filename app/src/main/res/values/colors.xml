@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="babyblue">#7DA7B6</color>
+
+    <color name="verde">#5CB85C</color>
+    <color name="azul">#35465D</color>
+    <color name="gris">#D8D8D8</color>
 </resources>

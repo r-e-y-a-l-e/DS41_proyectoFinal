@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Wise Wallet</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="to_ingresos">Ingresos</string>
+    <string name="to_gastos">Gastos</string>
+    <string name="to_presupuestos">Presupuestos</string>
+
+    <string name="placeholder">Presupuesto Mensual</string>
+
+    <string name="to_config">Config</string>
+
+    <string name="to_informes">Informes</string>
 </resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.reynafigueroa.wisewallet.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_presupuestoFragment"
+            app:destination="@id/presupuestoFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_ingresosFragment"
+            app:destination="@id/ingresosFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_gastosFragment"
+            app:destination="@id/gastosFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_informesFragment"
+            app:destination="@id/informesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/presupuestoFragment"
+        android:name="com.reynafigueroa.wisewallet.PresupuestoFragment"
+        android:label="fragment_presupuesto"
+        tools:layout="@layout/fragment_presupuesto" />
+    <fragment
+        android:id="@+id/ingresosFragment"
+        android:name="com.reynafigueroa.wisewallet.IngresosFragment"
+        android:label="fragment_ingresos"
+        tools:layout="@layout/fragment_ingresos" />
+    <fragment
+        android:id="@+id/gastosFragment"
+        android:name="com.reynafigueroa.wisewallet.GastosFragment"
+        android:label="fragment_gastos"
+        tools:layout="@layout/fragment_gastos" />
+    <fragment
+        android:id="@+id/informesFragment"
+        android:name="com.reynafigueroa.wisewallet.InformesFragment"
+        android:label="fragment_informes"
+        tools:layout="@layout/fragment_informes" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.reynafigueroa.wisewallet.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

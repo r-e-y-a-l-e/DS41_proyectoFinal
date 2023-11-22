@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/icono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ "
+        app:layout_constraintEnd_toStartOf="@id/cant_presupuesto"
+        app:layout_constraintTop_toTopOf="@id/cant_presupuesto"
+        style="@style/icono"
+        />
+
+    <TextView
+        android:id="@+id/placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        app:layout_constraintTop_toBottomOf="@id/cant_presupuesto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/placeholder"/>
+
+
+    <TextView
+        android:id="@+id/cant_presupuesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="0.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/texto_principal"
+        />
+
+    <Button
+        android:id="@+id/to_presupuestos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:text="@string/to_presupuestos"
+        app:layout_constraintTop_toBottomOf="@id/placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/buttons"/>
+
+
+    <TextView
+        android:id="@+id/icono2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ "
+        app:layout_constraintEnd_toStartOf="@id/cant_ingresos"
+        app:layout_constraintTop_toTopOf="@id/cant_ingresos"
+        style="@style/icono"/>
+
+    <TextView
+        android:id="@+id/cant_ingresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="0.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/to_presupuestos"
+        style="@style/texto_principal"/>
+
+
+    <Button
+        android:id="@+id/to_ingresos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="100dp"
+        android:text="@string/to_ingresos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cant_ingresos"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/buttons"/>
+
+    <TextView
+        android:id="@+id/icono3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ "
+        app:layout_constraintEnd_toStartOf="@id/cant_gastos"
+        app:layout_constraintBottom_toBottomOf="@id/cant_gastos"
+        style="@style/icono"/>
+
+    <TextView
+        android:id="@+id/cant_gastos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="0.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/to_ingresos"
+        style="@style/texto_principal"/>
+
+    <Button
+        android:id="@+id/to_gastos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/to_gastos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cant_gastos"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/buttons"/>
+
+    <Button
+        android:id="@+id/to_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/to_config"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/buttons"/>
+
+    <Button
+        android:id="@+id/to_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/to_informes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/buttons"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
