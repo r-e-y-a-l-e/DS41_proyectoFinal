@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_firstFragment_to_informesFragment"
             app:destination="@id/informesFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_listFragment"
+            app:destination="@id/listFragment" />
     </fragment>
     <fragment
         android:id="@+id/presupuestoFragment"
@@ -51,4 +54,9 @@
         android:name="com.reynafigueroa.wisewallet.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.reynafigueroa.wisewallet.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" />
 </navigation>

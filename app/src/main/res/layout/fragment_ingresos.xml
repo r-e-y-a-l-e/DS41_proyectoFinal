@@ -3,7 +3,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     tools:context=".IngresosFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ "
+        app:layout_constraintEnd_toStartOf="@id/cant_ingresos"
+        app:layout_constraintBottom_toBottomOf="@id/cant_ingresos"
+        style="@style/icono"/>
+
+    <EditText
+        android:id="@+id/cant_ingresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:hint="0.00"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipo"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/tipoIngreso"
+        app:layout_constraintBottom_toBottomOf="@id/tipoIngreso"
+        app:layout_constraintEnd_toStartOf="@id/tipoIngreso"/>
+
+    <Spinner
+        android:id="@+id/tipoIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/cant_ingresos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fecha"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/fechaIngreso"
+        app:layout_constraintTop_toTopOf="@id/fechaIngreso"
+        app:layout_constraintBottom_toBottomOf="@id/fechaIngreso"/>
+
+
+    <EditText
+        android:id="@+id/fechaIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:focusable="false"
+        android:clickable="true"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/tipoIngreso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/guardarIngreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/guardar_button"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

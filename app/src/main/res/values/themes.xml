@@ -30,4 +30,16 @@
         <item name="android:textSize">15sp</item>
     </style>
 
+    <style name="guardar_button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@color/verde</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

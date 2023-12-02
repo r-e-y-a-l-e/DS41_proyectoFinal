@@ -2,13 +2,35 @@
     <string name="app_name">Wise Wallet</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="to_ingresos">Ingresos</string>
-    <string name="to_gastos">Gastos</string>
-    <string name="to_presupuestos">Presupuestos</string>
-
-    <string name="placeholder">Presupuesto Mensual</string>
-
+    <string name="to_ingresos">Income</string>
+    <string name="to_gastos">Expenses</string>
+    <string name="to_presupuestos">Budgets</string>
     <string name="to_config">Config</string>
+    <string name="to_informes">Reports</string>
+    <string name="to_hist_ingresos">Income History</string>
 
-    <string name="to_informes">Informes</string>
+    <string name="placeholder">Monthly Budget</string>
+
+    <string name="tipo">Type:</string>
+    <string name="fecha">Date:</string>
+
+    <string name="guardar">Save</string>
+
+    <string-array name="options">
+        <item>Work</item>
+        <item>Business</item>
+        <item>Investment</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="presupuesto_options">
+        <item>Home</item>
+        <item>Food</item>
+        <item>Services</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+
 </resources>

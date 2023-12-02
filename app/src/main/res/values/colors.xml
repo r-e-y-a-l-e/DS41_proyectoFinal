@@ -8,4 +8,12 @@
     <color name="verde">#5CB85C</color>
     <color name="azul">#35465D</color>
     <color name="gris">#D8D8D8</color>
+
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+
+    <color name="sky">#00ADD8</color>
+
+    <color name="grey">#878787</color>
 </resources>

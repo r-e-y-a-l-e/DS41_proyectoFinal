@@ -14,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
 
         splash.setOnClickListener(){
 
-            val i = Intent(this, MainActivity::class.java)
+            val i = Intent(this, AuthActivity::class.java)
             startActivity(i)
 
             finish()
